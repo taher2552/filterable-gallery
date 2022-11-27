@@ -92,39 +92,35 @@ gadgetForm.addEventListener('submit',(e)=>{
 })
 
 
-displayItem.addEventListener('mouseover', ()=>{
+// displayItem.addEventListener('mouseover', ()=>{
 
   
     
    
-    const delete_row=document.querySelectorAll('.delete_btn');
+//     const delete_row=document.querySelectorAll('.delete_btn');
 
    
 
-    // console.log(gadgetArr)
+//     // console.log(gadgetArr)
 
-    console.log(delete_row);
+//     console.log(delete_row);
  
-    // for (const del of delete_row)
+//     // for (const del of delete_row)
     
-    for(let i=0; i<delete_row.length;i++){
+//     for(let i=0; i<delete_row.length;i++){
 
-        delete_row[i].addEventListener('click', function() {
+//         delete_row[i].addEventListener('click', function() {
 
-          this.parentNode.remove();
-          gadgetArr.splice(i,1);
-          localStorage.setItem("gadget",JSON.stringify(gadgetArr));
+//           this.parentNode.remove();
+//           gadgetArr.splice(i,1);
+//           localStorage.setItem("gadget",JSON.stringify(gadgetArr));
           
          
         
-        })
+//         })
 
-      }
-   
-       
-
-    
-  })
+//       } 
+//   })
 
 
 

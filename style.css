@@ -48,6 +48,11 @@ h4{
     margin-left: 20px;
 }
 
+
+select:hover{
+    cursor:pointer;
+}
+
 input, select{
     padding:10px;
     border: none;
