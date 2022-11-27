@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <main class="container">
+    <header >
+        <h1>Filterable Gallery</h1>
+        <h4>Add Product</h4>
+
+        <form action="" id="gadget_form">
+        <label for="url">Enter image url</label>
+        <input type="text" name="url" id="url">
+        <label for="gadget_category" id="type">Type</label>
+        <select name="gadget_category" id="gadget_category">
+            <option value="headphone">Headphones</option>
+            <option value="laptop">Laptop</option>
+            <option value="Mobile">Mobile</option>
+        </select>
+        <button type="submit" class="add_button">Add</button>
+    </form>
+    </header>
+
+    <div id="error"></div>
+
+
+    <section class="filter_button">
+        <form action="" id="category_filter">
+        <button type="submit" class="category_btn">All</button>
+        <button type="submit" class="category_btn">Headphones</button>
+        <button type="submit" class="category_btn">Laptops</button>
+        <button type="submit" class="category_btn">Mobiles</button>
+    </form>
+    </section>
+
+    <section id="display_item"></section>
+
+    <script src="gadget.js"></script>
+    </main>
+</body>
+</html>
