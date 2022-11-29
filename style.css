@@ -7,7 +7,7 @@
 
 
 body{
-    background-color: #80898d;
+    background-color: #f89dce;
 }
 
 .container{
@@ -21,7 +21,7 @@ h1{
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
-    background-color: #3c8182;
+    background-color: #990011;
     color:white;
     padding:10px 0;
 }
@@ -78,15 +78,15 @@ input{
     margin-left: 20px;
     border-radius: 20px;
     padding:10px 20px;
-    background-color:#3c8182;
+    background-color:#990011;
     border: 2px solid transparent;
     color:white;
     font-size: 15px;    
 }
 
 .add_button:hover{
-    color:#3c8182;
-    border:2px solid #3c8182;
+    color:#990011;
+    border:2px solid #990011;
     background-color: white;
     cursor: pointer;
 }
@@ -101,7 +101,7 @@ input{
 
 .category_btn{
     color:white;
-    background-color: #3c8182;
+    background-color: #990011;
     padding:15px;
     font-size: 20px;
     border-radius: 10px;
@@ -112,10 +112,10 @@ input{
 }
 
 .category_btn:hover{
-    color:#3c8182;
+    color:#990011;
     background-color: white;
     cursor: pointer;
-    border:2px solid #3c8182;
+    border:2px solid #990011;
 
 }
 
@@ -154,7 +154,7 @@ input{
     font-size: 20px;
     color: white;
     border:2px solid transparent;
-    background-color: #3c8182;
+    background-color: #990011;
     font-size: 20px;
     padding: 10px 0;
     border-radius: 10px;
@@ -163,9 +163,9 @@ input{
 
 .delete_btn:hover{
     cursor:pointer;
-    color:#3c8182;
+    color:#990011;
     background-color: white;
-    border:2px solid #3c8182;
+    border:2px solid #990011;
 }
 
 @media only screen and (max-width:1200px) {
