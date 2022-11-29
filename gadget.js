@@ -19,7 +19,7 @@ function display(gadgetArr){
 
  
 
-  gadgetArr.map((val)=>displayItem.innerHTML+=(`<div id="display_section"><img id="${val.id}" class="image" src="${val.imageUrl}" alt="image loading..."> <br><br><button class="delete_btn">Delete</button><div>` ))
+  gadgetArr.map((val)=>displayItem.innerHTML+=(`<div id="display_section"><img id="${val.id}" class="image" src="${val.imageUrl}" alt="image loading..."> <br><br><button  id="${val.id}"  class="delete_btn">Delete</button><div>` ))
 
 }
 
@@ -92,42 +92,21 @@ gadgetForm.addEventListener('submit',(e)=>{
 })
 
 
-displayItem.addEventListener('mouseover', ()=>{
-
-  
-    
+displayItem.addEventListener('click', (e)=>{
+  if(e.target.classList.contains("delete_btn")){
    
-    const delete_row=document.querySelectorAll('.delete_btn');
+    gadgetArr.forEach((ele,idx)=>{
+      // console.log("d: "+ele.id+" E:  "+ parseInt(e.path[0].id));
+      if(ele.id == parseInt(e.path[0].id)){
+        let confirm=window.confirm("Are you sure you want to delete this item?");
+        if(confirm){
+         gadgetArr.splice(idx,1);
+         e.target.parentElement.remove();
+        }
+      }
 
+    });
    
-
-    // console.log(gadgetArr)
-
-    console.log(delete_row);
- 
-    // for (const del of delete_row)
-    
-    for(let i=0; i<delete_row.length;i++){
-
-        delete_row[i].addEventListener('click', function() {
-
-          this.parentNode.remove();
-          gadgetArr.splice(i,1);
-          localStorage.setItem("gadget",JSON.stringify(gadgetArr));
-          
-         
-        
-        })
-
-      } 
-  })
-
-
-
-// displayItem.addEventListener('click', ()=>{
-//   if(e.target.classList.contains("delete_btn")){
-//     e.target.parentElement.remove();
-//     gadgetArr.splice(i,1);
-//     //           localStorage.setItem("gadget",JSON.stringify(gadgetArr));
-//   }
-// })
+    localStorage.setItem("gadget",JSON.stringify(gadgetArr));        
+  }
+})
